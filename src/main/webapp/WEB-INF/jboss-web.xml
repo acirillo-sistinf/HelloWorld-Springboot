@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-web>
+    <context-root>/enac-esami-backend</context-root>
+    <replication-config>
+        <replication-trigger>SET</replication-trigger>
+        <replication-granularity>ATTRIBUTE</replication-granularity>
+        <use-jk>true</use-jk>
+        <max-unreplicated-interval>30</max-unreplicated-interval>
+        <snapshot-mode>INSTANT</snapshot-mode>
+        <snapshot-interval>1000</snapshot-interval>
+    </replication-config>
+</jboss-web>
